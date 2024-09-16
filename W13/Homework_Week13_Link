@@ -1,0 +1,28 @@
+package W13;
+
+public class W13_homeWork {
+
+    public static void main(String[] args) { //ให้นับจำนวนเลขคู่เเละเลขคี่ใน array ด่านล่าง
+
+        int[] number = {1,4,,5,3,9,55,4,34,23,90,48,57,37,9,1,3,29};
+
+        int countOdd = 0;
+        int countEven = 0;
+        System.out.println();
+        for (int i = 0; i < number.length; i++) {
+
+            if (number[i] % 2 == 0) {
+                System.out.println(number[i] + "-"+"Even number");
+                countEven++;
+            } else {
+                System.out.println(number[i] +"-" + "Odd number");
+                countOdd++;
+            }
+        }
+        System.out.print("\nAmount of all Number : " + number.length);
+        System.out.print("\nAmount of Odd Number : " + countOdd);
+        System.out.print("\nAmount of Even Number : " + countEven);
+        System.out.println();
+
+    }
+}
